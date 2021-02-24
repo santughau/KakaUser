@@ -1,0 +1,365 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title> Department</ion-title>
+  </ion-toolbar>
+  
+</ion-header>
+
+<ion-content>
+  <ion-segment scrollable (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="1">
+      <ion-label>Marathi</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="2">
+      <ion-label>Hindi</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="3">
+      <ion-label>English</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="4">
+      <ion-label>History</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="5">
+      <ion-label>Pub. Admin.</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="6">
+      <ion-label>Political Sci.</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="7">
+      <ion-label>Economics</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="8">
+      <ion-label>Geography </ion-label>
+    </ion-segment-button>
+  </ion-segment>
+  <div class="img-thumbnail " style="margin:10px">
+    <div *ngIf="segVlaue == 1">
+      <h2 class="text-center text-white bg-primary mt-3">Marathi</h2>
+      <ion-item>
+        <ion-thumbnail slot="start" style="width:80px; height:80px">
+          <img src="assets/img/jadhav.jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2 style="font-weight: 800;" class="text-muted"> Jadhav D. R.</h2>
+          <h3><span class="text-danger ion-text-wrap">Designation</span> <span> HOD and Assistant Professor </span></h3>
+          <p><span class="text-danger">Education : </span> <span> M.Phill </span> </p>
+          <p><span class="text-danger ion-text-wrap">No. of Years of Experience : </span> <span> 23 Yrs. </span> </p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail slot="start" style="width:80px; height:80px">
+          <img src="assets/img/kambless.jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2 style="font-weight: 800;" class="text-muted"> Kamble S. S</h2>
+          <h3><span class="text-danger ion-text-wrap">Designation</span> <span> Assistant Professor</span></h3>
+          <p><span class="text-danger">Education : </span> <span> M.A. </span> </p>
+          <p><span class="text-danger ion-text-wrap">No. of Years of Experience : </span> <span> 21 Yrs. </span> </p>
+        </ion-label>
+      </ion-item>
+      <hr>
+      <div>
+        <h4 class="text-center text-white bg-dark">Courses Offered By the Department</h4>
+        <ion-list>
+          <ion-item>
+            <ion-label>B. A. Marathi First Year</ion-label>
+
+          </ion-item>
+          <ion-item>
+            <ion-label>B. A. Marathi Second Year</ion-label>
+
+
+          </ion-item>
+          <ion-item>
+            <ion-label>B. A. Marathi Third Year</ion-label>
+
+          </ion-item>
+
+        </ion-list>
+      </div>
+    </div>
+
+    <!-----------------2-->
+    <div *ngIf="segVlaue == 2">
+      <h2 class="text-center text-white bg-success mt-3">Hindi</h2>
+      <ion-item>
+        <ion-thumbnail slot="start" style="width:80px; height:80px">
+          <img src="assets/img/biradar.jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2 style="font-weight: 800;" class="text-muted"> Biradar U. A.</h2>
+          <h3><span class="text-danger ion-text-wrap">Designation</span> <span> HOD and Assistant Professor </span></h3>
+          <p><span class="text-danger">Education : </span> <span> M.Phill </span> </p>
+          <p><span class="text-danger ion-text-wrap">No. of Years of Experience : </span> <span> 23 Yrs. </span> </p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail slot="start" style="width:80px; height:80px">
+          <img src="assets/img/yemekar.jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2 style="font-weight: 800;" class="text-muted"> Dr. Emekar P. N.</h2>
+          <h3><span class="text-danger ion-text-wrap">Designation</span> <span> Assistant Professor</span></h3>
+          <p><span class="text-danger">Education : </span> <span> NET,Ph.D. </span> </p>
+          <p><span class="text-danger ion-text-wrap">No. of Years of Experience : </span> <span> 11 Yrs. </span> </p>
+        </ion-label>
+      </ion-item>
+      <hr>
+      <div>
+        <h4 class="text-center text-white bg-dark">Courses Offered By the Department</h4>
+        <ion-list>
+          <ion-item>
+            <ion-label>B. A. Hindi First Year</ion-label>
+
+          </ion-item>
+          <ion-item>
+            <ion-label>B. A. Hindi Second Year</ion-label>
+
+
+          </ion-item>
+          <ion-item>
+            <ion-label>B. A. Hindi Third Year</ion-label>
+
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+
+    <!----------------3-->
+    <div *ngIf="segVlaue == 3">
+      <h2 class="text-center text-white bg-info mt-3">English</h2>
+      <ion-item>
+        <ion-thumbnail slot="start" style="width:80px; height:80px">
+          <img src="assets/img/default.jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2 style="font-weight: 800;" class="text-muted"> Biradar A. L.</h2>
+          <h3><span class="text-danger ion-text-wrap">Designation</span> <span> Assistant Professor </span></h3>
+          <p><span class="text-danger">Education : </span> <span> M.Phill </span> </p>
+          <p><span class="text-danger ion-text-wrap">No. of Years of Experience : </span> <span> 3 Yrs. </span> </p>
+        </ion-label>
+      </ion-item>
+
+      <hr>
+      <div>
+        <h4 class="text-center text-white bg-dark">Courses Offered By the Department</h4>
+        <ion-list>
+          <ion-item>
+            <ion-label>B. A. English First Year</ion-label>
+
+          </ion-item>
+          <ion-item>
+            <ion-label>B. A. English Second Year</ion-label>
+
+
+          </ion-item>
+          <ion-item>
+            <ion-label>B. A. English Third Year</ion-label>
+
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+
+    <!------------------4-->
+    <div *ngIf="segVlaue == 4">
+      <h2 class="text-center text-white  mt-3" style="background-color: brown;">History</h2>
+      <ion-item>
+        <ion-thumbnail slot="start" style="width:80px; height:80px">
+          <img src="assets/img/default.jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2 style="font-weight: 800;" class="text-muted"> Dr. Sabne A. G.</h2>
+          <h3><span class="text-danger ion-text-wrap">Designation</span> <span> HOD and Assistant Professor </span></h3>
+          <p><span class="text-danger">Education : </span> <span> M.Phill,Ph.D. </span> </p>
+          <p><span class="text-danger ion-text-wrap">No. of Years of Experience : </span> <span> 23 Yrs. </span> </p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail slot="start" style="width:80px; height:80px">
+          <img src="assets/img/default.jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2 style="font-weight: 800;" class="text-muted"> Rathod C. R.</h2>
+          <h3><span class="text-danger ion-text-wrap">Designation</span> <span> Assistant Professor</span></h3>
+          <p><span class="text-danger">Education : </span> <span> M.A. </span> </p>
+          <p><span class="text-danger ion-text-wrap">No. of Years of Experience : </span> <span> 3 Yrs. </span> </p>
+        </ion-label>
+      </ion-item>
+      <hr>
+      <div>
+        <h4 class="text-center text-white bg-dark">Courses Offered By the Department</h4>
+        <ion-list>
+          <ion-item>
+            <ion-label>B. A. History First Year</ion-label>
+
+          </ion-item>
+          <ion-item>
+            <ion-label>B. A. History Second Year</ion-label>
+
+
+          </ion-item>
+          <ion-item>
+            <ion-label>B. A. History Third Year</ion-label>
+
+          </ion-item>
+
+        </ion-list>
+      </div>
+    </div>
+    <!--------------------5-->
+    <div *ngIf="segVlaue == 5">
+      <h2 class="text-center text-white bg-info mt-3">Public Admin.</h2>
+      <ion-item>
+        <ion-thumbnail slot="start" style="width:80px; height:80px">
+          <img src="assets/img/shindesir.jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2 style="font-weight: 800;" class="text-muted">Dr. Shinde A. R.</h2>
+          <h3><span class="text-danger ion-text-wrap">Designation</span> <span> HOD and Assistant Professor </span></h3>
+          <p><span class="text-danger">Education : </span> <span> SET,Ph.D </span> </p>
+          <p><span class="text-danger ion-text-wrap">No. of Years of Experience : </span> <span> 15 Yrs. </span> </p>
+        </ion-label>
+      </ion-item>
+
+      <hr>
+      <div>
+        <h4 class="text-center text-white bg-dark">Courses Offered By the Department</h4>
+        <ion-list>
+          <ion-item>
+            <ion-label>B. A. Public Admin. First Year</ion-label>
+
+          </ion-item>
+          <ion-item>
+            <ion-label>B. A. Public Admin. Second Year</ion-label>
+
+
+          </ion-item>
+          <ion-item>
+            <ion-label>B. A. Public Admin. Third Year</ion-label>
+
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+    <!--------------------6-->
+    <div *ngIf="segVlaue == 6">
+      <h2 class="text-center text-white bg-danger mt-3">Political Science</h2>
+      <ion-item>
+        <ion-thumbnail slot="start" style="width:80px; height:80px">
+          <img src="assets/img/manwate.jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2 style="font-weight: 800;" class="text-muted">Dr. Manvate U. H.</h2>
+          <h3><span class="text-danger ion-text-wrap">Designation</span> <span> HOD and Assistant Professor </span></h3>
+          <p><span class="text-danger">Education : </span> <span> NET,Ph.D </span> </p>
+          <p><span class="text-danger ion-text-wrap">No. of Years of Experience : </span> <span> 23 Yrs. </span> </p>
+        </ion-label>
+      </ion-item>
+
+      <hr>
+      <div>
+        <h4 class="text-center text-white bg-dark">Courses Offered By the Department</h4>
+        <ion-list>
+          <ion-item>
+            <ion-label>B. A. Polytical Sci. First Year</ion-label>
+
+          </ion-item>
+          <ion-item>
+            <ion-label>B. A. Polytical Sci. Second Year</ion-label>
+
+
+          </ion-item>
+          <ion-item>
+            <ion-label>B. A. Polytical Sci. Third Year</ion-label>
+
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+    <!--------------------7-->
+    <div *ngIf="segVlaue == 7">
+      <h2 class="text-center text-white bg-info mt-3">Economics</h2>
+      <ion-item>
+        <ion-thumbnail slot="start" style="width:80px; height:80px">
+          <img src="assets/img/kambleSP.jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2 style="font-weight: 800;" class="text-muted">Kamble S. P.</h2>
+          <h3><span class="text-danger ion-text-wrap">Designation</span> <span> Assistant Professor </span></h3>
+          <p><span class="text-danger">Education : </span> <span> SET </span> </p>
+          <p><span class="text-danger ion-text-wrap">No. of Years of Experience : </span> <span> 13 Yrs. </span> </p>
+        </ion-label>
+      </ion-item>
+
+      <hr>
+      <div>
+        <h4 class="text-center text-white bg-dark">Courses Offered By the Department</h4>
+        <ion-list>
+          <ion-item>
+            <ion-label>B. A. Economics First Year</ion-label>
+
+          </ion-item>
+          <ion-item>
+            <ion-label>B. A. Economics Second Year</ion-label>
+
+
+          </ion-item>
+          <ion-item>
+            <ion-label>B. A. Economics. Third Year</ion-label>
+
+          </ion-item>
+        </ion-list>
+      </div>
+    </div>
+    <!--------------------8-->
+    <div *ngIf="segVlaue == 8">
+      <h2 class="text-center text-white bg-primary mt-3">Geography</h2>
+      <ion-item>
+        <ion-thumbnail slot="start" style="width:80px; height:80px">
+          <img src="assets/img/KalaskarSuryakant.jpeg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2 style="font-weight: 800;" class="text-muted"> Dr. Kalaskar S. N.</h2>
+          <h3><span class="text-danger ion-text-wrap">Designation</span> <span> HOD and Assistant Professor </span></h3>
+          <p><span class="text-danger">Education : </span> <span> M.Phill, Ph.D.</span> </p>
+          <p><span class="text-danger ion-text-wrap">No. of Years of Experience : </span> <span> 23 Yrs. </span> </p>
+        </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-thumbnail slot="start" style="width:80px; height:80px">
+          <img src="assets/img/sagave1.jpg">
+        </ion-thumbnail>
+        <ion-label>
+          <h2 style="font-weight: 800;" class="text-muted"> Savgave V. N.</h2>
+          <h3><span class="text-danger ion-text-wrap">Designation</span> <span> Assistant Professor</span></h3>
+          <p><span class="text-danger">Education : </span> <span> M.Phill </span> </p>
+          <p><span class="text-danger ion-text-wrap">No. of Years of Experience : </span> <span> 18 Yrs. </span> </p>
+        </ion-label>
+      </ion-item>
+      <hr>
+      <div>
+        <h4 class="text-center text-white bg-dark">Courses Offered By the Department</h4>
+        <ion-list>
+          <ion-item>
+            <ion-label>B. A. Geography First Year</ion-label>
+            
+          </ion-item>
+          <ion-item>
+            <ion-label>B. A. Geography Second Year</ion-label>
+
+
+          </ion-item>
+          <ion-item>
+            <ion-label>B. A. Geography Third Year</ion-label>
+
+          </ion-item>
+
+        </ion-list>
+      </div>
+    </div>
+  </div>
+</ion-content>

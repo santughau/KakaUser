@@ -1,0 +1,145 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title> Other Stuff</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment scrollable (ionChange)="segmentChanged($event)">
+    <ion-segment-button value="1">
+      <ion-label>STUDENT'S CORNER</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="2">
+      <ion-label>Educational Facilities</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="3">
+      <ion-label>Anti-Ragging Regulation</ion-label>
+    </ion-segment-button>
+
+  </ion-segment>
+<div class="img-thumbnail" style="margin:10px">
+  <div *ngIf="segVlaue == 1">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <h3 class="text-danger">Rules for Conduct :</h3>
+          <ol class="text-justify pr-4">
+            <li>Students be a gentlemen.</li>
+            <li>Students must behave in an obedient , humble manner with professors &amp; office staff. Any act of
+              arrogance
+              will be dealt with firmly.</li>
+            <li>Students must carry their Identity Cards everyday. </li>
+            <li>Loitering in the corridors , peeping in the classes , calling some one from the classes , calling
+              someone
+              from
+              the class etc. will be considered as misbehavior and will be considered as misbehavior &amp; is liable for
+              punishment.</li>
+            <li>Students must obey all the rules while in the classrooms , office , library &amp; laboratories.</li>
+            <li>Damage to the college property will be considered an offence.</li>
+            <li>Students should park their vehicles only in the shed meant for parking , otherwise they will be fined.
+            </li>
+            <li>Outsiders will not be allowed to enter classrooms , laboratories , library , office and entire premises
+              without pre-permission.</li>
+          </ol>
+          <hr>
+          Principal has full authority to punish and even cancel the admission of the students and also take legal
+          action
+          for
+          their behavior in the college premises.
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+  <!-----------------2-->
+
+  <div *ngIf="segVlaue == 2">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+         
+            
+              <h4 class="text-danger text-justify">Concession given to the economically backward students:</h4>
+              <small class="text-justify">EBC facility is available &amp; can be availed of by those students whose parent’s
+                income from all the sources is less than Rs.15000/-</small><hr>
+          
+         
+              <h4 class="text-danger text-justify">Scholarships awarded to the wards of freedom fighters.</h4>
+      
+              <h4 class="text-justify text-danger">Facilities to Backward Class Students(SC/ST/NT/DNT) :</h4>
+              <small class="text-justify">Hostel Scholarship is admissible to the students of backward classes if their dwelling
+                place is certified by Social Welfare Officer as approved place of Residence(A.P.O.R.) . G.O.I. Scholarship can be
+                sanctioned to the students as &amp; when they fulfill certain formalities at the time of form submission. </small><hr>
+     
+      
+              <h4 class="text-danger text-justify"> Government Scholarships &amp; Concessions :</h4>
+              <small class="text-justify">Students securing more than 75% marks in the SSC or HSC examination can get government
+                open merit scholarship. Eligible students can apply for various types of scholarships &amp; free ships such as
+                -</small>
+         State Government’s scholarship for Backward Class Students <hr>
+          
+            
+           
+              <h4 class="text-danger">Coaching Classes for Entry in Civil Services :</h4>
+              <small class="text-justify">Considering the substantial number of SC/ST/OBC &amp; Minority students in college , a
+                special cell for uplifting the educational standards of these students is established in college . Through this
+                cell coaching will be given to the students for various competitive examinations such as Banking Examination ,
+                M.P.S.C. , U.P.S.C. examinations &amp; Entrance Examination for various P.G. Courses.</small><hr>
+       
+           
+              <h4 class="text-danger">Remedial Coaching for S.C. &amp; S.T. Students :</h4>
+              <small class="text-justify">Considering the educational &amp; financial background of many SC/ST/OBC /Minority
+                Students and to bring these students as per with other students , special coaching will be given to those students
+                so that they compete with other students in University examination. There remedial coaching will be given in
+                subjects like English , Mathematics etc &amp; any other subject the students ask for.</small><hr>
+         
+       
+          <p><b class="text-danger text-justify">Special Note :</b><small> No scholarship will be paid to the students unless
+              &amp; until it is received by the college from the respective governments(State/Central). Students not appearing for
+              the final exam , are not entitled to get G.O.I.</small></p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+  <!-----------------3-->
+  <div *ngIf="segVlaue == 3">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+  <p class="text-justify" style="text-indent: 45px;">Ragging is legally banned. It is a punishable offence. In view of the increasing number of
+    events of ragging, the University Grants Commission has passed the UGC Regulations on Curbing the Menace of Ragging in
+    Higher Educational Institutions, 2009. Ragging is any conduct by any student or students whether by words spoken or
+    written or by an act which has the effect of teasing, treating or handling with rudeness a fresher or any other
+    student, or including in rowdy or indiscipline activities by any student which causes or is likely to cause annoyance,
+    hardship or psychological harm or to raise fear or apprehension thereof in any fresher or any other student or asking
+    any student to do any act which such student will not in any ordinary course do and which has the effect of causing or
+    generating a sense of shame, or torment or embarrassment so as to adversely affect the physique or psyche of such
+    fresher or any other student, with or without an intent to derive a sadistic pleasure or showing of power, authority
+    or superiority by a student over any fresher or any other student. The Anti-Ragging Committee may, depending on the
+    nature and gravity of, the guilt established by the Anti-Ragging Squad, award, to those found guilty, one or more of
+    the following punishments namely; </p><hr>
+    <ol>
+      <li>Suspension from attending classes and academic privileges.</li>
+      <li>Withholding / withdrawing scholarship / fellowship and other benefits,</li>
+      <li>Debarring from appearing in any test / examination or other evaluation process.</li>
+      <li>Withholding results.</li>
+      <li>Debarring from representing the institution in any regional, national or international meet, tournament, youth
+        festival, etc.</li>
+      <li>Suspension /expulsion from the hostel.</li>
+      <li>Cancellation of admission</li>
+      <li>Rustication from the institution for period ranging from one to four semesters.</li>
+      <li>Expulsion from the institution and consequent debarring from admission to any other institution for a specified
+        period.</li>
+    </ol>
+  <p class="text-justify" style="text-indent: 45px;">Provided that where the persons committing or abetting the act of ragging are not identified,
+    the institution shall resort to collective punishment. The students are advised to consult Committee in case of
+    emergency. </p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</div>
+</ion-content>

@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title> Non Teaching Staff</ion-title>
+  </ion-toolbar>
+   
+  <ion-toolbar color="danger">
+    <ion-searchbar [(ngModel)]="term" showCancelButton="focus"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  <ion-item *ngFor="let item of teacher |filter:term">
+    <ion-thumbnail slot="start" style="width:80px; height:80px">
+      <img src="assets/img/{{item.image}}">
+    </ion-thumbnail>
+    <ion-label>
+      <h2 style="font-weight: 800;" class="text-muted"> {{item.name}}</h2>
+      <h3><span class="text-danger">Designation</span> <span> {{item.degisination}} </span></h3>
+      <p><span class="text-danger">Qualification : </span> <span> {{item.education}} </span> </p>
+    </ion-label>
+  </ion-item>
+
+</ion-content>

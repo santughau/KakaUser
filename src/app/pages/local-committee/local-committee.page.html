@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Local Committee</ion-title>
+  </ion-toolbar>
+  <ion-toolbar color="danger">
+    <ion-searchbar [(ngModel)]="term" showCancelButton="focus"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+<div class="img-thumbnail" style="margin:10px">
+    <ion-item *ngFor="let item of members |filter:term">
+      <ion-label>
+        <h1 class="text-primary text-center">{{item.member}}</h1>
+        <h3 class="text-center text-danger">{{item.degisination}} </h3>
+        <h3 class="text-center">Mobile : {{item.contact}} </h3>
+        <p class="text-center">{{item.address}}</p>
+      </ion-label>
+    </ion-item>
+    </div>
+  </ion-list>
+</ion-content>
